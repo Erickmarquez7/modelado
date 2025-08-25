@@ -1,4 +1,4 @@
-public abstract class Pato implements Nadable, Volable{
+public abstract class Pato{
 
     public abstract void quack();
 

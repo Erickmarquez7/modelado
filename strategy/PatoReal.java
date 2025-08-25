@@ -1,4 +1,4 @@
-public class PatoReal extends Pato{
+public class PatoReal extends Pato implements Volable{
 
     @Override
     public void quack() {
@@ -6,7 +6,10 @@ public class PatoReal extends Pato{
         throw new UnsupportedOperationException("Unimplemented method 'quack'");
     }
 
-    public void nadar(){
-        System.out.println("Necesito mas espacio");
+    //no implemento nadar, necesito mas espacio
+
+    public void Volable(){
+        System.out.println("Puedo volar :D");
     }
+
 }

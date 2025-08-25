@@ -1,4 +1,4 @@
-public class PatoDomestico extends Pato{
+public class PatoDomestico extends Pato implements Volable{
 
     @Override
     public void quack() {
@@ -6,8 +6,11 @@ public class PatoDomestico extends Pato{
         throw new UnsupportedOperationException("Unimplemented method 'quack'");
     }
 
-    public void nadar(){
-        System.out.println("A menos que tengan una alberca");
+    //no implemento nadar pk no puedo
+
+
+    public void Volable(){
+        System.out.println("Puedo volar :D");
     }
     
 }

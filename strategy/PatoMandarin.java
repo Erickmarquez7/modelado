@@ -1,4 +1,4 @@
-public class PatoMandarin extends Pato{
+public class PatoMandarin extends Pato implements Nadable, Volable{
 
     @Override
     public void quack() {
@@ -8,6 +8,14 @@ public class PatoMandarin extends Pato{
 
     public void squack(){
         
+    }
+
+    public void nadar(){
+        System.out.println("¿Que hace un pato en el agua? Nada");
+    }
+
+    public void Volable(){
+        System.out.println("Puedo volar :D");
     }
     
 }
