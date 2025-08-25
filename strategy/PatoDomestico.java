@@ -5,5 +5,9 @@ public class PatoDomestico extends Pato{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'quack'");
     }
+
+    public void nadar(){
+        System.out.println("A menos que tengan una alberca");
+    }
     
 }

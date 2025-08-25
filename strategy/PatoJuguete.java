@@ -6,6 +6,10 @@ public class PatoJuguete extends Pato{
         throw new UnsupportedOperationException("Unimplemented method 'quack'");
     }
 
+    public void nadar(){
+        System.out.println("Yo solo floto");
+    }//sobre escribir para que haga nada
+
     public void volar(){
         System.out.println("No vuelo :c");
     }
