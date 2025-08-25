@@ -1,4 +1,9 @@
-public class PatoAzulon extends Pato implements Nadable, Volable{
+public class PatoAzulon extends Pato{
+
+    public PatoAzulon(){
+        vuelo = new SiVuela();
+        nado = new SiNada(); 
+    }
 
     @Override
     public void quack() {
@@ -6,11 +11,4 @@ public class PatoAzulon extends Pato implements Nadable, Volable{
         throw new UnsupportedOperationException("Unimplemented method 'quack'");
     }
 
-    public void nadar(){
-        System.out.println("¿Que hace un pato en el agua? Nada");
-    }
-
-    public void Volable(){
-        System.out.println("Puedo volar :D");
-    }
 }

@@ -1,4 +1,9 @@
-public class PatoDomestico extends Pato implements Volable{
+public class PatoDomestico extends Pato{
+
+    public PatoDomestico(){
+        vuelo = new SiVuela();
+        nado = new NoNada();
+    }
 
     @Override
     public void quack() {

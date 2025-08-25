@@ -1,4 +1,9 @@
-public class PatoMandarin extends Pato implements Nadable, Volable{
+public class PatoMandarin extends Pato{
+
+    public PatoMandarin(){
+        vuelo = new SiVuela();
+        nado = new SiNada();
+    }
 
     @Override
     public void quack() {
@@ -7,15 +12,8 @@ public class PatoMandarin extends Pato implements Nadable, Volable{
     }
 
     public void squack(){
-        
+        //seria muuuuuuuuuuuy buena idea que se implementara una interfaz para el sonido
+        //guiño guiño
     }
 
-    public void nadar(){
-        System.out.println("¿Que hace un pato en el agua? Nada");
-    }
-
-    public void Volable(){
-        System.out.println("Puedo volar :D");
-    }
-    
 }
