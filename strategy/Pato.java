@@ -18,5 +18,9 @@ public abstract class Pato{
     public void volar() {
         vuelo.volar();
     }
+
+    public void setNado(ComportamientoNadable nado) {
+        this.nado = nado;
+    }
     
 }
