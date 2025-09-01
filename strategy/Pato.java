@@ -12,7 +12,7 @@ public abstract class Pato{
     }
 
     public void mostrar() {
-        System.out.println("Hola! Soy un pato :D");
+        System.out.println("Hola! Soy un pato bonitoo :D");
     }
 
     public void volar() {
