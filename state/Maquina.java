@@ -39,26 +39,18 @@ public class Maquina{
             state=NO_QUARTER;
             System.out.println("Has quitado la moneda");
         }
-        else if (state == NO_QUARTER){
-            System.out.println("No puedes quitar moneda porque no hay");
-        }
-        else if (state == SOLD){
-            System.out.println("Chin, ya a giraste, ni modo, no puedes quitar la moneda");
-        }
-        else if (state == SOLD_OUT){
-            System.out.println("No puedes quitar moneda porque no hay");
-        }
+        //aqui va tu codigo con los demas estados else if
     }
 
     public void girar(){
         if (state == SOLD){
-            System.out.println("Girar dos veces no te va a dar otra moneda xd");
+            //aqui va tu codigo
         }
         else if (state == NO_QUARTER){
-            System.out.println("Giraste, pero no hay moenda");
+            //aqui va tu codigo
         }
         else if (state == SOLD_OUT){
-            System.out.println("Giraste, pero no hay chicles unu");
+            //aqui va tu codigo
         }
         else if (state == HAS_QUARTER){
             System.out.println("Bien");
@@ -79,11 +71,7 @@ public class Maquina{
             }
         } else if (state == NO_QUARTER){
             System.out.println("primero necesitas insertar una moneda");
-        } else if (state == SOLD_OUT){
-            System.out.println("sin chicles");
-        } else if (state == HAS_QUARTER) {
-            System.out.println("ah, caray. ¿Como llegaste hasta aqui?");
-        }
+        } //aqui va tu codigo con los demas estado haciendo else if
 
     }
 
@@ -95,14 +83,7 @@ public class Maquina{
         switch (state) {
             case 0:
                 return "agotado";
-            case 1:
-                return "sin moneda";
-            case 2:
-                return "con moneda";
-            case 3:
-                return "vendido";
-            default:
-                return "desconocido";
+            //aqui va tu codigo
         }
     }
 }
