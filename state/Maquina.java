@@ -9,9 +9,7 @@ public class Maquina{
 
     //los cambiamos por estados
     Estado soldOutState;
-    Estado noQuarterState;
-    Estado hasQuarterState;
-    Estado soldState;
+    //aqui va tu codigo
 
     //int state = SOLD_OUT;
     Estado state;
@@ -23,15 +21,11 @@ public class Maquina{
         this.cantidad=cantidad;
 
         soldOutState = new SoldOutState(this);
-        noQuarterState = new NoQuarterState(this);
-        hasQuarterState = new HasQuarterState(this);
-        soldState = new SoldState(this);
+        //aqui va tu codigo
 
         //if(cantidad > 0)
         //    state=NO_QUARTER; //en el sentido de que espera la moneda
 
-        if (cantidad > 0)
-            state = noQuarterState;
     }
 
     public void insertarMoneda(){
@@ -66,7 +60,8 @@ public class Maquina{
         // else if (state == SOLD_OUT){
         //     System.out.println("No puedes quitar moneda porque no hay");
         // }
-        state.quitarMoneda();
+
+        //aqui va tu codigo
     }
 
     public void girar(){
@@ -84,6 +79,7 @@ public class Maquina{
         //     state = SOLD;
         //     dispensar();
         // }
+
         state.girar();
         state.dispensar();
     }
@@ -122,25 +118,15 @@ public class Maquina{
         return soldOutState;
     }
 
-    public Estado getNoQuarterState(){
-        return noQuarterState;
-    }
-
-    public Estado getHasQuarterState(){
-        return hasQuarterState;
-    }
-
-    public Estado getSoldState(){
-        return soldState;
-    }
+    //completa los getters
 
     //estado actual
     public Estado getEstado(){
-        return state;
+        
     }
 
     public int getCantidad(){
-        return cantidad;
+        
     }
 
     public String toString(){

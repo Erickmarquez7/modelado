@@ -10,23 +10,6 @@ public class NoQuarterState implements Estado{
         maquina.setState(maquina.getHasQuarterState());
     }
 
-    
-    public void quitarMoneda() {
-        System.out.println("No puedes quitar una moneda porque no hay");
-    }
-
-    
-    public void girar() {
-        System.out.println("Giraste, pero no hay moneda");
-    }
-
-    
-    public void dispensar() {
-        System.out.println("Primero necesitas insertar una moneda");   
-    }
-
-    public String toString(){
-        return "Sin moneda";
-    }
+    //completa los demas metodos
 
 }
