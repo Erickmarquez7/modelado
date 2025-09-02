@@ -4,6 +4,6 @@ public class Main {
         real.nadar();
         real.setNado(new NoNada());
         real.nadar();
-        
+        println("Estamos creando un pato, pero pk no un Samy?");
     }
 }
